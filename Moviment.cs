@@ -16,35 +16,35 @@ public class Moviment : MonoBehaviour
     // Atualiza a cada frama
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) 
+        if (Input.GetKey(KeyCode.A)) 
         {
                 movi.x = -0.05f;
                 movi.y = 0;
                 movi.z = 0;
                 transform.Translate(movi);
             }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
             {
                 movi.x = 0.05f;
                 movi.y = 0;
                 movi.z = 0;
                 transform.Translate(movi);
             }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             movi.x = 0f;
             movi.y = 0;
             movi.z = -0.05f ;
             transform.Translate(movi);
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             movi.x = 0f;
             movi.y = 0;
             movi.z = 0.05f;
             transform.Translate(movi);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
             {
             movi.x = 0f;
             movi.y = 1f;
